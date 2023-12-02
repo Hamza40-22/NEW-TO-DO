@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #8FBAA9, #FDFBD4, #FDCFBE, #F28290, #785C6B);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+}
+
+#todoInput {
+    padding: 8px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+#addBtn,
+#saveBtn,
+#deleteAllBtn {
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#addBtn {
+    background-color: #8FBAA9;
+    color: white;
+}
+
+#saveBtn {
+    background-color: #FDFBD4;
+    color: #333;
+}
+
+#deleteAllBtn {
+    background-color: #FDCFBE;
+    color: #333;
+}
+
+#todoList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#todoList li {
+    background-color: #F28290;
+    margin: 5px 0;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+#todoList li button {
+    margin-left: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#todoList li button.editBtn,
+#todoList li button.deleteBtn {
+    margin-left: auto; 
+    padding: 8px; 
+}
+
+#todoList li button.editBtn {
+    background-color: #785C6B;
+    color: white;
+}
+
+#todoList li button.deleteBtn {
+    background-color: #F28290;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    #todoInput,
+    #addBtn,
+    #saveBtn,
+    #deleteAllBtn,
+    #todoList li {
+        width: 100%;
+        max-width: none;
+    }
+}
